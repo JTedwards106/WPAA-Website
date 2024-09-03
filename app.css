@@ -33,7 +33,7 @@ header .heading{
 }
 .join-header {
     align-items: center;
-    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('/images/gettyimages 3.jpg') no-repeat center center;
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('./images/gettyimages 3.jpg') no-repeat center center;
     background-size:cover;
     color: #fff;
     position: relative;
@@ -210,7 +210,11 @@ header .heading{
     font-size: 2.5em;
     margin-bottom: 20px;
 }
-
+.location iframe{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
 /* Join Our Alumni Network Section */
 .join {
     padding: 40px 20px;
@@ -260,8 +264,28 @@ footer .social-icons a {
         flex-direction: column;
     }
 
+    body{
+        text-align: center;
+    }
+
     .core .col-center,
     .about img {
         margin-bottom: 20px;
     }
+    .heading
+    {
+        font-size: 22px;
+    }
+    
+    .main .content h2{
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
+        }
+
+        header{
+            padding: 5px 5px;
+        }
 }
