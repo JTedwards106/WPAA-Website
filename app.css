@@ -12,8 +12,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 500;
-    padding: 10px 20px;
-    background: rgba(0, 4, 24, 0.7); /* Semi-transparent background */
+    background: rgba(0, 6, 24, 0.877); /* Semi-transparent background */
     backdrop-filter: blur(5px); /* Adds a blur effect to the background */
     transition: background 0.3s ease;
 }
@@ -25,12 +24,15 @@ header nav {
 }
 
 header nav a img {
-    width: 100px;
+    width: 120px;
     height: auto;
+    margin: 0;
+    padding-bottom: 5px ;
 }
 header .heading{
     color: white;
 }
+
 .join-header {
     align-items: center;
     background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('./images/gettyimages 3.jpg') no-repeat center center;
@@ -62,7 +64,7 @@ header .heading{
 /* Main Content Styles */
 /* Main Section Styling */
 .main {
-    padding: 50px 0;
+    padding: 30px 0;
     background-color: #f8f9fa; /* Light background color */
 }
 
@@ -95,11 +97,13 @@ header .heading{
     }
 }
 
-
+.events{
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('./images/gettyimages\ 1.jpg') content-box center center;
+}
 /* Carousel Image Styling */
 .carousel-item img {
     max-height: 500px; /* Set the desired max height for images */
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* Caption Styling */
@@ -165,19 +169,21 @@ header .heading{
     margin-bottom: 40px;
 }
 
-.about .row {
-    display: flex;
-    justify-content: center;
-}
-
-.about img {
+/* Container for the grid */
+.about .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two equal columns */
+    gap: 10px; /* Space between the grid items */
+    padding: 10px;
+  }
+  
+  /* Styling for each image */
+  .image-grid img {
     width: 100%;
-    max-width: 350px;
-    height: 300px;
-    border-radius: 10px;
-    margin: 0 10px;
-}
-
+    height: auto;
+    object-fit: cover;
+  }
+  
 /* Testimonials Section */
 .Testimonials {
     padding: 40px 20px;
@@ -255,6 +261,7 @@ footer .social-icons a {
     color: white;
     font-size: 1.2em;
     margin: 0 10px;
+    padding-right: 20px;
 }
 
 /* Responsive Styles */
@@ -263,15 +270,23 @@ footer .social-icons a {
     .about .row {
         flex-direction: column;
     }
-
-    body{
+    .col-md-6{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .text-center{
         text-align: center;
     }
-
     .core .col-center,
     .about img {
         margin-bottom: 20px;
     }
+    .about .image-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Two equal columns */
+        gap: 10px; /* Space between the grid items */
+        padding: 10px;
+      }
     .heading
     {
         font-size: 22px;
