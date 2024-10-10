@@ -224,7 +224,7 @@ header .heading{
 /* Join Our Alumni Network Section */
 .join {
     padding: 40px 20px;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(/images/gettyimages-2025134061-2048x2048.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(./images/gettyimages-2025134061-2048x2048.jpg);
 }
 
 .join P, h2{
