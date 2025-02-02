@@ -1,211 +1,146 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wakefield Primary Alumni Association</title>
-    <link rel="shortcut icon" href="./images/wpaalogo.png" type="icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/1cd4fd6359.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/wpaaLogo.png" type="icon">
     <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1cd4fd6359.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <section class="header">
         <nav>
-            <a href="index.html"><img src="./images/wpaalogo.png" alt="Wakefield Primary Alumni Association St. Catherine Ltd"></a>
-            <h1 class="heading">Wakefield Primary Alumni Association - St. Catherine</h1>
-        </nav>
-    </header>
-    <!-- Event Section -->
-    <section class="events">
-        <div id="eventsCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#eventsCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#eventsCarousel" data-slide-to="1"></li>
-                <li data-target="#eventsCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./images/bts1.jpg" class="d-block w-100" alt="Event 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Back to School Project</h5>
-                        <p>The Wakefield Primary Alumni Association donated school supplies to students in need</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/bts3.jpg" class="d-block w-100" alt="Event 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Back to School Project</h5>
-                        <p>The Wakefield Primary Alumni Association donated school supplies to students in need</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/bts4.jpg" class="d-block w-100" alt="Event 4">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Back to School Project</h5>
-                        <p>The Wakefield Primary Alumni Association donated school supplies to students in need</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/bts5.jpg" class="d-block w-100" alt="Event 5">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Back to School Project</h5>
-                        <p>The Wakefield Primary Alumni Association donated school supplies to students in need</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/bts6.jpg" class="d-block w-100" alt="Event 6">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Back to School Project</h5>
-                        <p>The Wakefield Primary Alumni Association donated school supplies to students in need</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/bts7.jpg" class="d-block w-100" alt="Event 7">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                </div>
+            <a href="index.html"><img src="images/wpaaLogo.png" alt="Schools's Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="index.html">DONATE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
             </div>
-
-            <!-- Controls -->
-            <a class="carousel-control-prev" href="#eventsCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#eventsCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Wakefield Primary Alumni Association - St. Catherine</h1>
+            <p>Connect with fellow alumni and support the growth of Wakefield Primary. Join us for meetings, volunteer opportunities, and events to engage and uplift our community.</p>
+            <br/>
+            <a href="about.html" class="hero-btn">READ MORE</a>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main>
-        <section class="main">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Text Content on the Left -->
-                    <div class="col-md-6">
-                        <h2>Join Wakefield Primary Alumni Association - St. Catherine</h2>
-                        <p>Connect with fellow alumni and support the growth of Wakefield Primary. Join us for meetings, volunteer opportunities, and events to engage and uplift our community.</p>
-                    </div>
-                    <!-- Image on the Right -->
-                    <div class="col-md-6 text-center">
-                        <img src="./images/school.jpg" alt="Building" class="img-fluid school-image">
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- About Us-->
+<section class="about">
+    <div class="container">
+      <div class="about-content">
+        <h2 class="text-center">About Us</h2>
+        <p>
+          The Wakefield Primary Alumni Association (W.P.A.A) St. Catherine helps
+          our alma marter thrive. We bring together parents, teachers, and
+          local leaders to support the education of our students
+        </p>
+      </div>
+      <div class="image-grid">
+        <img src="./images/bts1.jpg" alt="Image 1" />
+        <img src="./images/bts3.jpg" alt="Image 2" />
+      </div>
+    </div>
+  </section>
+        
 
-        <!-- Core Packages Section -->
-        <section class="core">
-            <div class="container">
-                <h2 class="text-center">Core Packages</h2>
-                <div class="row">
-                    <div class="col-center">
-                        <img src="./images/student-counsel.jpg" alt="Student Counseling" class="img-fluid mb-3">
-                        <h3>Student Counseling Services</h3>
-                        <p>We help students find guidance and support for academic and personal challenges.</p>
-                    </div>
-                    <div class="col-center">
-                        <img src="./images/extracuricular.jpg" alt="Extracurricular Programs" class="img-fluid mb-3">
-                        <h3>Extracurricular Programs</h3>
-                        <p>We offer a range of after school activities to enhance student learning and growth.</p>
-                    </div>
-                    <div class="col-center">
-                        <img src="./images/PTA.jpg" alt="Parent-Teacher Meetings" class="img-fluid mb-3">
-                        <h3>Parent-Teacher Meetings</h3>
-                        <p>We organize regular meetings to keep parents informed of their children's progress.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-----Course-----> 
 
-        <!-- About Us Section -->
-        <section class="about">
-            <div class="container">
-                <h2 class="text-center">About Us</h2>
-                <p>The Wakefield Primary Alumni Association (W.P.A.A) St. Catherine helps our alma marter thrive. We bring together parents, teachers, and local leaders to support the education of our students</p>
-                <div class="image-grid">
-                    <img src="./images/bts1.jpg">
-                    <img src="./images/bts3.jpg">
-                    <img src="./images/bts4.jpg">
-                    <img src="./images/bts5.jpg">
-                    <img src="./images/bts6.jpg">
-                    <img src="./images/bts7.jpg">
-                  </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="Testimonials">
-            <div class="container">
-                <h2 class="text-center mb-4">Testimonials</h2>
-                <div class="carousel slide" id="testimonialsCarousel" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="text-center">
-                                <p>"Wakefield Primary Alumni Association - St. Catherine is outstanding! Their dedication to alumni and the community is heartwarming. I highly recommend joining and supporting their initiatives. Thank you for your incredible work!" - Olivia</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="text-center">
-                                <p>"Another testimonial goes here."</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#testimonialsCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Location Section -->
-        <section class="location">
-            <div class="container text-center">
-                <h2>Location</h2>
-                <p>Wakefield District, Buxton Town P.A., St. Catherine, Jamaica</p>
-                <div id="map" class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60676.589389273344!2d-77.0977971114502!3d18.104540567615953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb0f00726ac18d%3A0x809c255f4c1a7162!2sWakefield%20Primary%20School!5e0!3m2!1sen!2sjm!4v1722455356551!5m2!1sen!2sjm" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
-                </div>
-                </div>
-        </section>
-
-        <!-- Join Our Alumni Network Section -->
-        <section class="join">
-            <div class="container text-center">
-                <h2>Join Our Alumni Network</h2>
-                <p>Connect with fellow Wakefield Primary graduates in St. Catherine.</p>
-                <button class="btn btn-primary">Join Now</button>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>© 2024 Wakefield Primary Alumni Association - St. Catherine. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fa-brands fab fa-instagram-square"></i></a>
-           
-            </div>
+    <section class="course">
+        <h1>What We Offer</h1>
+        <p>Lorm ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+    <div class="row">
+        <div class="course-col">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Education</h3>
+            <p> Provide mentorship, scholarships, and school resources to enhance students’ 
+                academic performance and overall learning experience.</p>
         </div>
-    </footer>
+        <div class="course-col">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Engagement</h3>
+            <p>Foster a strong network of past students by organizing reunions, community projects,
+                 and professional networking opportunities to give back to the school.</p>
+        </div>
+        <div class="course-col">
+            <i class="fa-solid fa-hand-holding-medical"></i>
+            <h3>Support</h3>
+            <p>Contribute to improving school facilities, sponsoring extracurricular activities,
+                 and supporting student well-being through donations and volunteer initiatives.</p>
+        </div>
+    </div>
+    
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!--- Call To Action --->
+    <section class="cta">
+        <h1>Reconnect, Give Back, and Make a Difference!</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+
+    <!---- Footer ---->
+
+    <section class="footer">
+        <p>© 2024 Wakefield Primary Alumni Association - St. Catherine. All rights reserved.</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fab fa-instagram-square"></i>
+                <i class="fa-brands fab fa-linkedin"></i>
+            </div>
+    </section>
+
+
+<!------ JavaScipt for Toggle Menu ------>
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    let index = 0;
+    const slides = document.querySelectorAll(".event-slide");
+    const totalSlides = slides.length;
+    const carouselInner = document.querySelector(".carousel-inner");
+    const dots = document.querySelectorAll(".dot");
+
+    function updateSlide() {
+        carouselInner.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach(dot => dot.classList.remove("active-dot"));
+        dots[index].classList.add("active-dot");
+    }
+
+    document.querySelector(".next").addEventListener("click", function () {
+        index = (index + 1) % totalSlides;
+        updateSlide();
+    });
+
+    document.querySelector(".prev").addEventListener("click", function () {
+        index = (index - 1 + totalSlides) % totalSlides;
+        updateSlide();
+    });
+
+    function autoSlide() {
+        index = (index + 1) % totalSlides;
+        updateSlide();
+    }
+
+    setInterval(autoSlide, 3000); // Auto-slide every 3 seconds
+});
+
+
+    </script>
+
 </body>
 </html>

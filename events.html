@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakefield Primary Alumni - Events</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1cd4fd6359.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/wpaaLogo.png" alt="Alumni Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="index.html">DONATE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Upcoming Events</h1>
+    </section>
+
+    <!----- Events Section -----> 
+    <section class="events">
+        <h1>Upcoming Events</h1>
+        <p>Stay updated with our latest alumni activities and initiatives.</p>
+    
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="event-slide">
+                    <img src="images/gettyimages 1.jpg" alt="Annual Alumni Meet">
+                    <h3>Annual Alumni Meet</h3>
+                    <p>Reconnect with old friends and network with fellow alumni.</p>
+                </div>
+                <div class="event-slide">
+                    <img src="images/gettyimages 2.jpg" alt="Charity Fundraiser">
+                    <h3>Charity Fundraiser</h3>
+                    <p>Help us give back to Wakefield Primary through our fundraising initiatives.</p>
+                </div>
+                <div class="event-slide">
+                    <img src="images/gettyimages 3.jpg" alt="Community Service Day">
+                    <h3>Community Service Day</h3>
+                    <p>Join us as we support local initiatives and volunteer efforts.</p>
+                </div>
+            </div>
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+    
+        <div class="carousel-dots">
+            <span class="dot active-dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    
+
+    <!---- Footer ---->
+    <section class="footer">
+        <p>© 2024 Wakefield Primary Alumni Association - St. Catherine. All rights reserved.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!------ JavaScript for Toggle Menu ------>
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    let index = 0;
+    const slides = document.querySelectorAll(".event-slide");
+    const totalSlides = slides.length;
+    const carouselInner = document.querySelector(".carousel-inner");
+    const dotsContainer = document.querySelector(".carousel-dots");
+
+    // Create dots dynamically
+    dotsContainer.innerHTML = ""; // Clear any existing dots
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+        if (i === 0) dot.classList.add("active-dot"); // First dot active by default
+        dot.setAttribute("data-index", i);
+        dotsContainer.appendChild(dot);
+    }
+    const dots = document.querySelectorAll(".dot");
+
+    function updateSlide() {
+        carouselInner.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach(dot => dot.classList.remove("active-dot"));
+        dots[index].classList.add("active-dot");
+    }
+
+    document.querySelector(".next").addEventListener("click", function () {
+        index = (index + 1) % totalSlides;
+        updateSlide();
+    });
+
+    document.querySelector(".prev").addEventListener("click", function () {
+        index = (index - 1 + totalSlides) % totalSlides;
+        updateSlide();
+    });
+
+    dots.forEach(dot => {
+        dot.addEventListener("click", function () {
+            index = parseInt(this.getAttribute("data-index"));
+            updateSlide();
+        });
+    });
+
+    function autoSlide() {
+        index = (index + 1) % totalSlides;
+        updateSlide();
+    }
+
+    setInterval(autoSlide, 5000); // Auto-slide every 5 seconds
+});
+
+
+    </script>
+</body>
+</html>
